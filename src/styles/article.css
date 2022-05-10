@@ -1,0 +1,19 @@
+
+article {
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 40px 10px 0px 10px;
+    width: 370px;
+    width: inherit;
+}
+
+article > img {
+    width: inherit;
+    border-radius: 5px 5px 0 0;
+}
+
+article > p {
+    margin: 10px 15px;
+}

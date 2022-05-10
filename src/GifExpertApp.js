@@ -3,33 +3,33 @@ import { v4 as key } from 'uuid';
 import { AddCategory } from './componets/AddCategory';
 import { GifGrid } from './componets/GifGrid';
 
+// Styles
+import './index.css'
+import './styles/header.css';
+import './styles/content.css';
 
 export const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['One Punch']);
+    const [categories, setCategories] = useState([]);
 
     return (
         <>
             <header>
-                <h2>GifExpertApp</h2>
-                <AddCategory setCategories={setCategories} />    
+                <h2 className='header-title'>GifExpertApp</h2>
+                <AddCategory setCategories={setCategories} />
             </header>
 
 
-            <div className='container'>
-                <ol>
-                    {
-                        categories.map(category => (
-                            <GifGrid
-                                className="article"
-                                key={key()}
-                                category={category}
-                            />
-                        )
-                        )
-                    }
-                </ol>
-            </div>
+                {
+                    categories.map(category => (
+                        <GifGrid
+                            key={key()}
+                            category={category}
+                        />
+                    ))
+                }
+
+
         </>
     )
 }

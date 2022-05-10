@@ -1,5 +1,5 @@
 
-
+/*
 * {
     font-family: Roboto, sans-serif;
 }
@@ -39,5 +39,12 @@ input {
 
 .card img {
     max-height: 170px;
+}
+
+*/
+
+body {
+    margin: 0;
+    font-family:  'Roboto','san-serif';
 }
 

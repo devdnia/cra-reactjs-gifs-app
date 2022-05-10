@@ -1,0 +1,33 @@
+html {
+    box-sizing: content-box;
+}
+
+html * {
+    box-sizing: inherit;
+}
+
+header {
+    /* Para que no desaparezca el box-shadow*/
+    background-color: #fff;
+    box-shadow: 1px 2px 5px rgb( 0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-title {
+    margin: 10px;
+}
+
+header input {
+    border-radius: 5px;
+    border: solid 1px #eee;
+    outline: none;
+    padding: 10px 5px;
+}
+
+.container{
+    text-align: center;
+}
