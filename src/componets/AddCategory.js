@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export const AddCategory = ( { setCategories }) => {
 
-    const [inputValue, setInputValue] = useState('Hola Mundo');
+    const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
@@ -12,13 +12,14 @@ export const AddCategory = ( { setCategories }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setCategories( cats => [ ...cats, inputValue ]);
+        setCategories( cats => [  inputValue, ...cats ]);
     }
 
     return (
         <form onSubmit={ handleSubmit }>
             <input
                 type="text"
+                placeholder="Búsqueda de imágenes"
                 value={inputValue}
                 onChange={handleInputChange}
             />
