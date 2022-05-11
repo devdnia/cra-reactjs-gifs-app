@@ -9,16 +9,68 @@ html * {
 header {
     /* Para que no desaparezca el box-shadow*/
     background-color: #fff;
-    box-shadow: 1px 2px 5px rgb( 0, 0, 0, 0.3);
+    font-size: 2em;
+    box-shadow: 1px 2px 5px rgb(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     padding: 22px;
     position: relative;
     z-index: 2;
+    align-items: center;
 }
+
 
 .header-title {
     margin: 10px;
+    /*Animación logo*/
+    /*Colocar un h1 encima de otro*/
+    position: absolute;
+    left: 30px;
+
+}
+
+/*Logo*/
+.border {
+    color: gray;
+    /* Border */
+    text-shadow:
+        -1px -1px 0 gray,
+        1px -1px 0 gray,
+        1px 1px 0 gray,
+        -1px 1px 0 gray;
+}
+
+.wave {
+    color: black;
+    animation: wave 3s ease-in-out infinite;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 47%,
+                10% 48%,
+                33% 54%,
+                54% 60%,
+                78% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
 }
 
 header input {
@@ -26,8 +78,10 @@ header input {
     border: solid 1px #eee;
     outline: none;
     padding: 10px 5px;
+    margin-top: 40px;
+    width: 350px;
 }
 
-.container{
+.container {
     text-align: center;
 }

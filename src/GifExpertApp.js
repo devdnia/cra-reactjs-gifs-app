@@ -15,7 +15,8 @@ export const GifExpertApp = () => {
     return (
         <>
             <header>
-                <h2 className='header-title'>GifExpertApp</h2>
+                <h1 className='header-title border'>GifExpertApp</h1>
+                <h1 className='header-title wave'>GifExpertApp</h1>
                 <AddCategory setCategories={setCategories} />
             </header>
 
