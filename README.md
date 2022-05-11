@@ -23,7 +23,7 @@ Para realizar nuestras pruebas con jest.
 ### `npm run build`
 
 Para construir nuestra app de producción.
-Este comando lo constuirá en la carpeta .\ouldn't customize it when you are ready for it.
+Este comando lo constuirá en la carpeta .\
 
 ## Imágenes de la APP
 
